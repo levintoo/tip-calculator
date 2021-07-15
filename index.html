@@ -15,17 +15,6 @@
 
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -39,16 +28,16 @@
       </div>
       <div class="button-group">
         <p class="label">Select Tip %</p>
-        <button>5%</button>
-        <button>10%</button>
-        <button>15%</button>
-        <button>25%</button>
-        <button>50%</button>
-        <button>Custom</button>
+        <button id="five">5%</button>
+        <button id="ten">10%</button>
+        <button id="fifteen">15%</button>
+        <button id="twentyfive">25%</button>
+        <button id="fifty">50%</button>
+        <button id="custom">Custom</button>
       </div>
       <div class="number-of-people">
         <p class="label">Number of People</p>
-        <input type="number" name="bill" id="bill-input" placeholder="">
+        <input type="number" name="bill" id="people-input" placeholder="">
         <i class="bi bi-person-fill"></i>
 
       </div>
@@ -56,8 +45,8 @@
     </div>
     <div class="output col-6">
       <div>
-        <p class="tip-amount text-white">Tip amount <br><span class="label">/ person</span> <br> <span class="fs-2">$ 0.00</span> </p>
-        <p class="tip-amount text-white">Total <br><span class="label">/ person</span> <br> <span class="fs-2">$ 0.00</span> </p>
+        <p class="tip-amount text-white">Tip amount <br><span class="label">/ person</span> <br> <span id="tip-amount" class="fs-2">$ 0.00</span> </p>
+        <p class="tip-amount text-white">Total <br><span class="label">/ person</span> <br> <span id="amount" class="fs-2">$ 0.00</span> </p>
 
 
 

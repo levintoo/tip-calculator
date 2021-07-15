@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-weight: bold;
+    font-family: 'Space Mono', monospace;
 }
 body{
     height: 100vh;
@@ -9,15 +11,100 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: #C5E4E7 !important;
 }
 
 .content{
-    background-color: aquamarine;
+    background: white;
     width: 60rem;
-    border-radius: 10px;
+    border-radius: 20px;
+    height: 70vh;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bill-entry{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.attribution{
+.bill-input> input,
+.number-of-people > input{
+    background: #E9F3FC;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 95%;
+    height: 3.5rem;
+    color: #7F9C9F;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+}
+.bill-input> input:focus,
+.number-of-people > input:focus{
+    border: 2px solid green;
+}
+
+.label{
+    color: #7F9C9F;
+}
+
+.button-group button{
+    background: #004A4D;
+    color: #EAF3FA;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    height: 3rem;
+    width: 7rem;
+    margin: 10px;
+    font-size: 20px;
+
+}
+
+.button-group button:last-child{
+    background: #E9F3FC;
+    color: #757575;
+}
+.output div{
+    margin: 45px;
+}
+.output{
+
+    background: #004A4D;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.output div{
+    margin: 45px;
+}
+.fs-2{
+    color: #26C0AB;
+}
+.reset{
+    color: #004A4D;
+    background: #27C0AB;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    height: 3.5rem;
+    font-size: 20px;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
     position: fixed;
     bottom: 0;
-}
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }

@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -30,8 +33,10 @@
 
   <div class="content row">
     <div class="bill-entry col-6">
-      <p class="label">Bill</p>
-      <input type="number" name="bill" id="bill-input" placeholder="$">
+      <div class="bill-input">
+        <p class="label">Bill</p>
+        <input type="number" name="bill" id="bill-input" placeholder="$">
+      </div>
       <div class="button-group">
         <p class="label">Select Tip %</p>
         <button>5%</button>
@@ -41,16 +46,25 @@
         <button>50%</button>
         <button>Custom</button>
       </div>
-      <p class="label">Number of People</p>
-      <input type="number" name="bill" id="bill-input" placeholder="">
-      <i class="bi bi-person-fill"></i>
+      <div class="number-of-people">
+        <p class="label">Number of People</p>
+        <input type="number" name="bill" id="bill-input" placeholder="">
+        <i class="bi bi-person-fill"></i>
 
+      </div>
 
     </div>
     <div class="output col-6">
-      <p class="tip-amount">Tip amount</p>
-      <p class="total">Tip amount</p>
-      <button class="reset">Reset</button>
+      <div>
+        <p class="tip-amount text-white">Tip amount <br><span class="label">/ person</span> <br> <span class="fs-2">$ 0.00</span> </p>
+        <p class="tip-amount text-white">Total <br><span class="label">/ person</span> <br> <span class="fs-2">$ 0.00</span> </p>
+
+
+
+      </div>
+      <div>
+        <button class="reset">Reset</button>
+      </div>
     </div>
   </div>
 

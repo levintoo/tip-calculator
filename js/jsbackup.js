@@ -13,17 +13,12 @@ billInput.addEventListener('change', update);
 reset.addEventListener('click', clear);
 
 
-
 const five = document.querySelector('#five');
 const ten = document.querySelector('#ten');
 const fifteen = document.querySelector('#fifteen');
 const twentyFive = document.querySelector('#twentyfive');
 const fifty = document.querySelector('#fifty');
-
-const custom = document.querySelector('#custom-bill-input');
-const customBtn = document.querySelector('.customBtn');
  
-customBtn.addEventListener('click', update);
 
 function clear() {
     billInput.value = "";
@@ -74,13 +69,6 @@ function update() {
         tipAmountOutput.innerHTML = (tipAmount);
         amountOutput.innerHTML = (tipAmount / people);
         console.log(tipAmount)
-    });
-    customBtn.addEventListener('click', () => {
-        var tipAmount = bill *(custom.value/100) * people;
-
-        tipAmountOutput.innerHTML = (tipAmount);
-        amountOutput.innerHTML = (tipAmount / people);
-        console.log(tipAmount);
     });
 
 

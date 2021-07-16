@@ -18,8 +18,28 @@
 </head>
 
 <body>
+<!-- Button trigger modal -->
 
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="bill-input">
+        <p class="label">Custom tip %</p>
+        <input type="number" class="custom-btn" name="bill" id="custom-bill-input" placeholder="$">
+      </div>
+
+
+          <button type="button" class="customBtn" data-bs-dismiss="modal">Submit</button>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+</div>
   <div class="content row">
     <div class="bill-entry col-6">
       <div class="bill-input">
@@ -33,7 +53,9 @@
         <button id="fifteen">15%</button>
         <button id="twentyfive">25%</button>
         <button id="fifty">50%</button>
-        <button id="custom">Custom</button>
+        <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Custom
+        </button>
       </div>
       <div class="number-of-people">
         <p class="label">Number of People</p>
@@ -63,9 +85,8 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
   <script src="js/app.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
